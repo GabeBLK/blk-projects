@@ -130,7 +130,7 @@ body {
   color: #e63946; /* red accent on hover */
 }
 
-/* OPTIONAL MOBILE STACKING */
+/* MOBILE STACKING */
 @media(max-width: 768px) {
   .sticky-nav .nav-links {
     flex-direction: column;
