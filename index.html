@@ -83,39 +83,19 @@
     </div>
   </section>
 
-<div id="map" style="width:100%;height:500px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.1);margin:40px auto;"></div>
+<!-- GOOGLE MAP IFRAME: FULL SYDNEY -->
+<div class="map-container">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13296.084799081585!2d151.209900!3d-33.868820!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae3fa7df7bfb%3A0x5017d681632c680!2sSydney%20NSW%2C%20Australia!5e0!3m2!1sen!2sus!4v1705700000000!5m2!1sen!2sus"
+    width="100%"
+    height="500"
+    style="border:0; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.1);"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
 
-<script>
-  function initMap() {
-    const sydneyCenter = { lat: -33.8688, lng: 151.2093 };
-
-    const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 10,
-      center: sydneyCenter,
-    });
-
-    const sydneyCoords = [
-      { lat: -33.55, lng: 150.75 },
-      { lat: -33.55, lng: 151.45 },
-      { lat: -33.60, lng: 151.55 },
-      { lat: -33.75, lng: 151.60 },
-      { lat: -33.70, lng: 150.90 },
-    ];
-
-    const sydneyArea = new google.maps.Polygon({
-      paths: sydneyCoords,
-      strokeColor: "#e63946",
-      strokeOpacity: 0.8,
-      strokeWeight: 2,
-      fillColor: "#e63946",
-      fillOpacity: 0.2,
-    });
-
-    sydneyArea.setMap(map);
-  }
-</script>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDo4cpeKGT_LzWsz9F8YCeJy6b2rI92rTc&callback=initMap" async defer></script>
 
 
 
