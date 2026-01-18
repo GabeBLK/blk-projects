@@ -8,17 +8,49 @@
 }
 
 body {
-   /* =========================
-   STICKY NAVIGATION
+/* =========================
+   STICKY NAVIGATION HORIZONTAL
 ========================= */
 .sticky-nav {
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: #000;
+  background-color: #000; /* black to match logo */
   z-index: 1000;
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
+
+.sticky-nav .nav-links {
+  list-style: none;
+  display: flex;           /* horizontal layout */
+  justify-content: center; /* center across page */
+  gap: 50px;               /* space between links */
+  margin: 0;
+  padding: 15px 0;
+}
+   {body}
+
+.sticky-nav .nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.sticky-nav .nav-links li a:hover {
+  color: #e63946; /* red accent on hover */
+}
+
+/* OPTIONAL MOBILE STACKING */
+@media(max-width: 768px) {
+  .sticky-nav .nav-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
 
 .nav-container {
   max-width: 1200px;
