@@ -1,42 +1,229 @@
 /* =========================
-   ABOUT US - FORCE CENTER
+   GLOBAL RESET & BASE
 ========================= */
-.about {
-  background-color: #ffffff !important;
-  padding: 80px 20px !important;
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: center !important;
-  align-items: center !important;
-  text-align: center !important;
-  width: 100% !important;
-  margin: 0 auto !important;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.about h2,
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f5f5f5;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+  background: #000; /* black like logo */
+  color: #fff;
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.logo-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.red-plus {
+  color: #e63946; /* red accent from logo */
+  margin-left: 5px;
+}
+
+.hero-tagline {
+  margin: 15px 0 30px;
+  font-size: 1.2rem;
+}
+
+.hero-btn {
+  display: inline-block;
+  background: #e63946;
+  color: #fff;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: #b22222;
+}
+
+/* =========================
+   ABOUT US (CENTERED)
+========================= */
+.about {
+  background-color: #ffffff;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .about-title {
-  font-family: 'Montserrat', sans-serif !important;
-  font-weight: 700 !important;
-  font-size: 2rem !important;
-  color: #000 !important;
-  text-align: center !important;
-  margin-bottom: 25px !important;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #000;
 }
 
 .about-text {
-  max-width: 720px !important;
-  width: 100% !important;
-  text-align: center !important;
-  margin: 0 auto !important;
+  max-width: 720px;
 }
 
 .about-text p {
-  font-family: 'Roboto', sans-serif !important;
-  font-size: 1.05rem !important;
-  line-height: 1.8 !important;
-  color: #333 !important;
-  margin-bottom: 18px !important;
-  text-align: center !important;
+  margin-bottom: 18px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #333;
+  text-align: center;
 }
 
+/* =========================
+   SERVICES SECTION
+========================= */
+.services {
+  padding: 80px 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.services h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #000;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.service-card h3 {
+  margin-bottom: 10px;
+  color: #000;
+}
+
+/* =========================
+   GALLERY SECTION
+========================= */
+#gallery {
+  background-color: #ffffff;
+  padding: 80px 20px;
+}
+
+#gallery h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #000;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  background: #f5f5f5;
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+/* =========================
+   CONTACT SECTION
+========================= */
+.contact {
+  background-color: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #000;
+}
+
+.contact p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.contact a {
+  color: #e63946;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color: #b22222;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer, .site-footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 25px 15px;
+  font-size: 0.9rem;
+}
+
+footer .licence, .site-footer .licence {
+  margin-top: 8px;
+  color: #ccc;
+}
+
+.site-footer .pending {
+  color: #e63946;
+  font-weight: bold;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media(max-width: 600px) {
+  .hero .logo-text {
+    font-size: 2rem;
+  }
+
+  .about-title {
+    font-size: 1.6rem;
+  }
+}
 
