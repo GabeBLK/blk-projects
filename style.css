@@ -1,12 +1,13 @@
-/* GENERAL STYLES */
+/* GOOGLE FONTS */
 body {
+  font-family: 'Roboto', sans-serif;
   margin: 0;
-  font-family: Arial, sans-serif;
   line-height: 1.6;
-  background: #f5f5f5;
   color: #333;
+  background: #f5f5f5;
 }
 
+/* CONTAINERS */
 .container {
   max-width: 1000px;
   margin: auto;
@@ -15,40 +16,53 @@ body {
 
 /* HERO HEADER */
 .hero {
-  background: #2c3e50;
+  background: #000;
   color: #fff;
-  padding: 100px 20px;
   text-align: center;
+  padding: 120px 20px 80px;
 }
 
-.hero h1 {
+.hero .logo h1 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
-  margin-bottom: 10px;
+  margin: 0;
 }
 
-.hero p {
+.red-plus {
+  color: #E63946;
+  margin-left: 5px;
+}
+
+.hero .tagline {
   font-size: 1.2rem;
-  margin-bottom: 20px;
+  margin: 10px 0 30px;
 }
 
 .hero .btn {
   display: inline-block;
-  background: #e67e22;
+  background: #E63946;
   color: #fff;
   padding: 12px 25px;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
+  transition: 0.3s;
 }
 
 .hero .btn:hover {
-  background: #d35400;
+  background: #B22222;
 }
 
 /* SERVICES */
+#services {
+  padding: 80px 20px;
+  background: #f5f5f5;
+}
+
 #services h2 {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+  color: #2C2C2C;
 }
 
 .services-grid {
@@ -59,27 +73,32 @@ body {
 
 .service {
   background: #fff;
-  padding: 20px;
+  padding: 25px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   text-align: center;
 }
 
 .service h3 {
-  margin-top: 0;
-  color: #2c3e50;
+  color: #000;
 }
 
 /* GALLERY */
+#gallery {
+  background: #eee;
+  padding: 80px 20px;
+}
+
 #gallery h2 {
   text-align: center;
   margin-bottom: 40px;
+  color: #2C2C2C;
 }
 
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 15px;
+  gap: 20px;
 }
 
 .gallery-item {
@@ -88,31 +107,41 @@ body {
   border-radius: 8px;
   text-align: center;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
 }
 
 /* CONTACT */
-#contact h2 {
+#contact {
+  padding: 80px 20px;
+  background: #fff;
   text-align: center;
+}
+
+#contact h2 {
   margin-bottom: 20px;
 }
 
-#contact p {
-  text-align: center;
-  margin: 5px 0;
+#contact a.btn {
+  margin-top: 15px;
 }
 
 /* FOOTER */
 footer {
+  background: #000;
+  color: #fff;
   text-align: center;
   padding: 15px 0;
-  background: #2c3e50;
-  color: #fff;
   margin-top: 40px;
 }
 
 /* RESPONSIVE */
 @media(max-width: 600px) {
-  .hero h1 {
+  .hero .logo h1 {
     font-size: 2rem;
   }
 }
+
