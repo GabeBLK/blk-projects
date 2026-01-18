@@ -6,6 +6,34 @@
   margin: 0;
   padding: 0;
 }
+/* Headings (Mont) */
+h1, h2, h3, .logo-text {
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+}
+
+/* Body text (Roboto) */
+p, li, .about-text p, .service-card p, .testimonial-text, .testimonial-author, .contact p {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+/* Links */
+a {
+  color: #e63946;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #b22222;
+}
+
+/* Buttons */
+.hero-btn, .enquiry-form button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
 
 body {
   font-family: 'Roboto', sans-serif;
