@@ -53,6 +53,31 @@ body {
   background: #B22222;
 }
 
+.about {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  padding: 80px 20px !important;
+}
+
+.about-title {
+  text-align: center !important;
+  margin-bottom: 25px !important;
+}
+
+.about-text {
+  max-width: 720px !important;
+  margin: 0 auto !important;
+}
+
+.about-text p {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  line-height: 1.8 !important;
+}
+
 /* SERVICES */
 #services {
   padding: 80px 20px;
