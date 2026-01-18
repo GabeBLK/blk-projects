@@ -59,9 +59,9 @@ body {
 }
 
 /* =========================
-   HERO SECTION
+   HOME SECTION
 ========================= */
-.hero {
+.home {
   background: #000;
   color: #fff;
   padding: 120px 20px;
@@ -79,12 +79,12 @@ body {
   margin-left: 5px;
 }
 
-.hero-tagline {
+.home-tagline {
   margin: 15px 0 30px;
   font-size: 1.2rem;
 }
 
-.hero-btn {
+.home-btn {
   display: inline-block;
   background: #e63946;
   color: #fff;
@@ -95,14 +95,14 @@ body {
   transition: background 0.3s ease;
 }
 
-.hero-btn:hover {
+.home-btn:hover {
   background: #b22222;
 }
 
 /* =========================
    ABOUT US SECTION
 ========================= */
-.about {
+.about us {
   background-color
 
 }
@@ -198,9 +198,9 @@ body {
 }
 
 /* =========================
-   HERO SECTION
+   HOME SECTION
 ========================= */
-.hero {
+.home {
   background: #000; /* black like logo */
   color: #fff;
   padding: 120px 20px;
@@ -218,12 +218,12 @@ body {
   margin-left: 5px;
 }
 
-.hero-tagline {
+.home-tagline {
   margin: 15px 0 30px;
   font-size: 1.2rem;
 }
 
-.hero-btn {
+.home-btn {
   display: inline-block;
   background: #e63946;
   color: #fff;
@@ -234,17 +234,17 @@ body {
   transition: background 0.3s ease;
 }
 
-.hero-btn:hover {
+.home-btn:hover {
   background: #b22222;
 }
-.hero a:hover {
+.home a:hover {
   color: #b22222;
 }
 
 /* =========================
    ABOUT US (CENTERED)
 ========================= */
-.about {
+.about us {
   background-color: #ffffff;
   padding: 80px 20px;
   display: flex;
@@ -253,7 +253,7 @@ body {
   text-align: center;
 }
 
-.about-title {
+.about us-title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 2rem;
@@ -261,18 +261,18 @@ body {
   color: #000;
 }
 
-.about-text {
+.about us-text {
   max-width: 720px;
 }
 
-.about-text p {
+.about us-text p {
   margin-bottom: 18px;
   font-size: 1.05rem;
   line-height: 1.8;
   color: #333;
   text-align: center;
 }
-.about a:hover {
+.about us a:hover {
   color: #b22222;
 }
 
