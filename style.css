@@ -345,6 +345,17 @@ body {
   transform: scale(1.05);
 }
 
+/* GOOGLE MAP RESPONSIVE */
+.map-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 40px auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
 /* =========================
    CONTACT SECTION
 ========================= */
