@@ -5,31 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BLK Projects | Carpentry & Maintenance</title>
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
   <!-- ================= NAVIGATION ================= -->
   <nav class="sticky-nav">
-    <ul class="nav-links">
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#services">Our Services</a></li>
-      <li><a href="#testimonials">Testimonials</a></li>
-      <li><a href="#enquiry">Enquiry</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <div class="nav-container">
+      <div class="nav-logo">BLK Projects<span class="red-plus">+</span></div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Our Services</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#enquiry">Enquiry</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <!-- ================= HERO SECTION ================= -->
+  <!-- ================= HERO ================= -->
   <section id="hero" class="hero">
-    <h1 class="logo-text">
-      BLK Projects<span class="red-plus">+</span>
-    </h1>
-    <p class="hero-tagline">
-      Carpentry & Maintenance Specialists
-    </p>
+    <h1 class="logo-text">BLK Projects<span class="red-plus">+</span></h1>
+    <p class="hero-tagline">Carpentry & Maintenance Specialists</p>
     <a href="#enquiry" class="hero-btn">Get a Quote</a>
   </section>
 
-  <!-- ================= ABOUT US ================= -->
+  <!-- ================= ABOUT ================= -->
   <section id="about" class="about">
     <h2 class="about-title">About Us</h2>
     <div class="about-text">
@@ -68,7 +74,7 @@
     </div>
   </section>
 
-  <!-- ================= GALLERY PLACEHOLDER ================= -->
+  <!-- ================= GALLERY ================= -->
   <section id="gallery">
     <div class="gallery-grid">
       <div class="gallery-item">Photo 1</div>
@@ -81,59 +87,43 @@
   <!-- ================= TESTIMONIALS ================= -->
   <section id="testimonials" class="testimonial-slider">
     <div class="slider-container">
-
       <div class="testimonial active">
         <p class="testimonial-text">
           “From the first phone call to the final install, the workmanship was excellent. The door fitment was perfect and the hardware feels solid and high quality.”
         </p>
-        <p class="testimonial-author">
-          — Sarah L., Homeowner, Sydney NSW
-        </p>
+        <p class="testimonial-author">— Sarah L., Homeowner, Sydney NSW</p>
       </div>
-
       <div class="testimonial">
         <p class="testimonial-text">
           “Reliable, punctual, and easy to deal with. The fire door upgrades were completed to compliance and documented properly, which made our job much easier.”
         </p>
-        <p class="testimonial-author">
-          — John M., Strata Manager, NSW
-        </p>
+        <p class="testimonial-author">— John M., Strata Manager, NSW</p>
       </div>
-
       <div class="testimonial">
         <p class="testimonial-text">
           “Quick response and professional service after damage to an external door. The repair was seamless and matched the existing finishes perfectly.”
         </p>
-        <p class="testimonial-author">
-          — Insurance Client, NSW
-        </p>
+        <p class="testimonial-author">— Insurance Client, NSW</p>
       </div>
-
-      <!-- Navigation Dots -->
       <div class="dots">
         <span class="dot active" onclick="showTestimonial(0)"></span>
         <span class="dot" onclick="showTestimonial(1)"></span>
         <span class="dot" onclick="showTestimonial(2)"></span>
       </div>
-
     </div>
   </section>
 
-  <!-- ================= ENQUIRY SECTION ================= -->
+  <!-- ================= ENQUIRY ================= -->
   <section id="enquiry" class="enquiry-section">
     <div class="enquiry-container">
-
       <h2>Enquire Now</h2>
       <p class="enquiry-intro">
-        Looking for carpentry, doors, or fire door works?  
-        Send us an enquiry and we’ll respond promptly.
+        Looking for carpentry, doors, or fire door works? Send us an enquiry and we’ll respond promptly.
       </p>
-
       <form class="enquiry-form">
         <input type="text" placeholder="Full Name" required>
         <input type="email" placeholder="Email Address" required>
         <input type="tel" placeholder="Phone Number">
-
         <select required>
           <option value="">Select Service</option>
           <option>Fire Doors & Compliance</option>
@@ -141,25 +131,18 @@
           <option>Locks & Hardware</option>
           <option>General Carpentry</option>
         </select>
-
         <textarea rows="5" placeholder="Tell us about your job..." required></textarea>
-
         <button type="submit">Send Enquiry</button>
       </form>
-
     </div>
   </section>
 
-  <!-- ================= GOOGLE MAP IFRAME ================= -->
+  <!-- ================= GOOGLE MAP ================= -->
   <div class="map-container">
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13296.084799081585!2d151.209900!3d-33.868820!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae3fa7df7bfb%3A0x5017d681632c680!2sSydney%20NSW%2C%20Australia!5e0!3m2!1sen!2sus!4v1705700000000!5m2!1sen!2sus"
-      width="100%"
-      height="500"
-      style="border:0; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.1);"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
+      width="100%" height="500" style="border:0; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.1);"
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
     </iframe>
   </div>
 
@@ -177,10 +160,10 @@
     <p class="licence">Licence No: 330775C <span class="pending"></span></p>
   </footer>
 
-  <!-- ================= JS ================= -->
+  <!-- JS -->
   <script src="script.js"></script>
-
 </body>
 </html>
+
 
 
