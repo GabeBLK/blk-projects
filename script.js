@@ -27,3 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const logo = document.querySelector('.logo-text');
   logo.classList.add('fade-in'); // ensures animation triggers
 });
+const form = document.querySelector('.enquiry-form');
+const successMsg = document.querySelector('.form-success');
+
+form.addEventListener('submit', function(e) {
+  // small delay to let Formspree send the email
+  setTimeout(() => {
+    successMsg.style.display = 'block'; // show confirmation
+    form.reset(); // clear the form
+  }, 500);
+});
