@@ -23,3 +23,7 @@ const navLinks = document.querySelector('.nav-links');
 hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('active');
 });
+document.addEventListener('DOMContentLoaded', () => {
+  const logo = document.querySelector('.logo-text');
+  logo.classList.add('fade-in'); // ensures animation triggers
+});
