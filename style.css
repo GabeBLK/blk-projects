@@ -42,6 +42,16 @@ section {scroll-margin-top:90px;}
 .hero-btn {display:inline-block;background:#e63946;color:#fff;padding:14px 30px;border-radius:6px;font-weight:bold;transition:background 0.3s;}
 .hero-btn:hover {background:#b22222;}
 
+/* ---------------- LOGO DIVIDER ---------------- */
+.logo-divider {
+  width: 60px;
+  height: 3px;
+  background-color: #e63946; /* red accent */
+  margin: 18px auto 22px;    /* centers and adds spacing */
+  border-radius: 2px;        /* soft edges */
+}
+
+
 /* ---------------- ABOUT ---------------- */
 .about {background:#fff;padding:80px 20px;text-align:center;}
 .about-title {font-size:2rem;font-weight:700;margin-bottom:25px;}
