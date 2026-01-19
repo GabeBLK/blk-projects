@@ -172,3 +172,16 @@ html {scroll-behavior:smooth;}
   .about-title {font-size:1.6rem;}
 }
 
+/* ---------------- ANIMATE ON SCROLL ---------------- */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px); /* start slightly down */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0); /* final position */
+}
+
+
