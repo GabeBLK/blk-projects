@@ -44,10 +44,10 @@ section {scroll-margin-top:90px;}
 
 /* ---------------- LOGO DIVIDER ---------------- */
 .logo-divider {
-  width: 100%;
+  width: 50%;
   height: 2px;  /* thinner */
   background-color: #e63946; /* red accent */
-  margin: 40px;    /* small space between logo and tagline */
+  margin: 4px;    /* small space between logo and tagline */
   border-radius: 1px;        /* soft edges */
 }
 
