@@ -37,3 +37,17 @@ form.addEventListener('submit', function(e) {
     form.reset(); // clear the form
   }, 500);
 });
+
+// Animate elements on scroll
+const animElements = document.querySelectorAll('.animate-on-scroll');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible'); // fade-in and slide up
+      observer.unobserve(entry.target); // only animate once
+    }
+  });
+}, { threshold: 0.1 });
+
+animElements.forEach(el => observer.observe(el));
