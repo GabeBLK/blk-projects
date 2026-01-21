@@ -5,10 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BLK Projects | Carpentry & Maintenance</title>
 
-  <!-- MAIN STYLES -->
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- GOOGLE TAG (GA4) -->
+  <!-- Google Tag (GA4) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-J3YLKHDL1B"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -17,88 +20,164 @@
     gtag('config', 'G-J3YLKHDL1B');
   </script>
 </head>
-
 <body>
 
-  <!-- ================= HEADER ================= -->
-  <header class="site-header">
-    <h1>BLK Projects</h1>
-    <p>Carpentry & Maintenance · Doors · Fire Doors · Hardware</p>
-  </header>
+  <!-- ================= NAVIGATION ================= -->
+  <nav class="sticky-nav">
+    <div class="nav-container">
+      <div class="nav-logo">BLK Projects<span class="red-plus">+</span></div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Our Services</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#enquiry">Enquiry</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ================= HERO ================= -->
+  <section id="hero" class="hero">
+    <div class="hero-logo-container">
+      <h1 class="logo-text fade-in">BLK Projects<span class="red-plus">+</span></h1>
+      <div class="logo-divider"></div>
+      <p class="hero-tagline">Carpentry & Maintenance Specialists</p>
+      <a href="#enquiry" class="hero-btn">Get a Quote</a>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="about animate-on-scroll">
+    <h2 class="about-title">About Us</h2>
+    <div class="about-text">
+      <p>
+        BLK Projects is a Sydney-based carpentry and maintenance company specialising in carpentry and general maintenance services.
+        With over 12 years of industry experience, we deliver reliable, compliant, and high-quality workmanship across every project.
+      </p>
+      <p>
+        We work closely with strata managers, government bodies, and insurance providers, ensuring all works are completed to the
+        required standards and compliance requirements. Our focus is on professionalism, attention to detail, and delivering
+        dependable outcomes our clients can trust.
+      </p>
+    </div>
+  </section>
 
   <!-- ================= SERVICES ================= -->
-  <section id="services" class="services">
+  <section id="services" class="services animate-on-scroll">
     <h2>Our Services</h2>
-
     <div class="services-grid">
-
-      <div class="service-card doors">
+      <div class="service-card animate-on-scroll">
         <h3>Doors & Frames</h3>
         <p>Internal, external, and fire-rated doors installed to Australian standards.</p>
       </div>
-
-      <div class="service-card fire-doors">
+      <div class="service-card animate-on-scroll">
         <h3>Fire Doors</h3>
         <p>Supply and installation of compliant fire doors and hardware.</p>
       </div>
-
-      <div class="service-card locks">
+      <div class="service-card animate-on-scroll">
         <h3>Locks & Hardware</h3>
         <p>Handles, locks, closers, hinges and door hardware.</p>
       </div>
-
-      <div class="service-card carpentry">
+      <div class="service-card animate-on-scroll">
         <h3>General Carpentry</h3>
         <p>Maintenance, repairs, upgrades, and custom carpentry works.</p>
       </div>
+    </div>
+  </section>
 
+  <!-- ================= GALLERY (placeholder) ================= -->
+  <section id="gallery" class="animate-on-scroll">
+    <div class="gallery-grid">
+      <div class="gallery-item animate-on-scroll">Photo 1</div>
+      <div class="gallery-item animate-on-scroll">Photo 2</div>
+      <div class="gallery-item animate-on-scroll">Photo 3</div>
+      <div class="gallery-item animate-on-scroll">Photo 4</div>
     </div>
   </section>
 
   <!-- ================= TESTIMONIALS ================= -->
-  <section id="testimonials" class="testimonial-section">
-    <h2>What Our Clients Say</h2>
-
-    <div class="testimonial-slider">
-
-      <div class="testimonial active">
-        <p class="testimonial-text">
-          “From the first phone call to the final install, the workmanship was excellent.”
-        </p>
+  <section id="testimonials" class="testimonial-slider animate-on-scroll">
+    <h2>Testimonials</h2>
+    <div class="slider-container">
+      <div class="testimonial active animate-on-scroll">
+        <p class="testimonial-text">“From the first phone call to the final install, the workmanship was excellent. The door fitment was perfect and the hardware feels solid and high quality.”</p>
         <p class="testimonial-author">— Sarah L., Homeowner, Sydney NSW</p>
       </div>
-
-      <div class="testimonial">
-        <p class="testimonial-text">
-          “Reliable, punctual, and compliant fire door upgrades completed professionally.”
-        </p>
+      <div class="testimonial animate-on-scroll">
+        <p class="testimonial-text">“Reliable, punctual, and easy to deal with. The fire door upgrades were completed to compliance and documented properly, which made our job much easier.”</p>
         <p class="testimonial-author">— John M., Strata Manager, NSW</p>
       </div>
-
-      <div class="testimonial">
-        <p class="testimonial-text">
-          “Quick response and seamless repairs after insurance damage.”
-        </p>
+      <div class="testimonial animate-on-scroll">
+        <p class="testimonial-text">“Quick response and professional service after damage to an external door. The repair was seamless and matched the existing finishes perfectly.”</p>
         <p class="testimonial-author">— Insurance Client, NSW</p>
       </div>
-
-      <div class="dots">
+      <div class="dots animate-on-scroll">
         <span class="dot active" onclick="showTestimonial(0)"></span>
         <span class="dot" onclick="showTestimonial(1)"></span>
         <span class="dot" onclick="showTestimonial(2)"></span>
       </div>
-
     </div>
+  </section>
+
+  <!-- ================= ENQUIRY FORM ================= -->
+  <section id="enquiry" class="enquiry-section">
+    <div class="enquiry-container">
+      <h2>Enquire Now</h2>
+      <p class="enquiry-intro">
+        Looking for carpentry, doors, or fire door works?  
+        Send us an enquiry and we’ll respond promptly.
+      </p>
+      <form class="enquiry-form" action="https://formspree.io/f/xjggwwgp" method="POST">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="tel" name="phone" placeholder="Phone Number">
+        <select name="service" required>
+          <option value="">Select Service</option>
+          <option>Fire Doors & Compliance</option>
+          <option>Doors & Frames</option>
+          <option>Locks & Hardware</option>
+          <option>General Carpentry</option>
+        </select>
+        <textarea name="message" rows="5" placeholder="Tell us about your job..." required></textarea>
+        <button type="submit">Send Enquiry</button>
+        <div class="form-success" style="display:none; color:#e63946; margin-top:10px;">
+          Thank you! Your enquiry has been sent. We’ll respond within 24 hours.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= GOOGLE MAP ================= -->
+  <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13296.084799081585!2d151.209900!3d-33.868820!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae3fa7df7bfb%3A0x5017d681632c680!2sSydney%20NSW%2C%20Australia!5e0!3m2!1sen!2sus!4v1705700000000!5m2!1sen!2sus"
+      width="100%" height="500" style="border:0; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.1);"
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="contact animate-on-scroll">
+    <h2>Contact</h2>
+    <p>Sydney, NSW</p>
+    <p>Email: <a href="mailto:info@blkprojects.com.au">info@blkprojects.com.au</a></p>
+    <p>Phone: 0433 439 249</p>
   </section>
 
   <!-- ================= FOOTER ================= -->
   <footer class="site-footer">
-    <p>© BLK Projects Pty Ltd · ACN 671 378 171 · Licence 330775C</p>
+    <p>BLK Projects Pty Ltd · ACN 671 378 171</p>
+    <p class="licence">Licence No: 330775C</p>
   </footer>
 
-  <!-- MAIN SCRIPT -->
+  <!-- ================= SCRIPT ================= -->
   <script src="script.js"></script>
-
 </body>
 </html>
 
