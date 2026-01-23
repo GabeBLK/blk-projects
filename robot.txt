@@ -1,1 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://blkprojects.com.au/sitemap.xml
 
