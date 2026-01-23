@@ -3,32 +3,34 @@
 
   <url>
     <loc>https://blkprojects.com.au/</loc>
-    <priority>1.0</priority>
+    <lastmod>2026-01-23</lastmod>
+    <priority>1.00</priority>
   </url>
 
   <url>
     <loc>https://blkprojects.com.au/#about</loc>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://blkprojects.com.au/#services</loc>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://blkprojects.com.au/#testimonials</loc>
-    <priority>0.7</priority>
+    <priority>0.60</priority>
   </url>
 
   <url>
     <loc>https://blkprojects.com.au/#enquiry</loc>
-    <priority>0.7</priority>
+    <priority>0.70</priority>
   </url>
 
   <url>
     <loc>https://blkprojects.com.au/#contact</loc>
-    <priority>0.6</priority>
+    <priority>0.70</priority>
   </url>
 
 </urlset>
+
